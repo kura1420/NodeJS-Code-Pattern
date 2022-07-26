@@ -1,0 +1,136 @@
+### 7/26/2022, 11:21:49 AM7, [/home/kura/SKPRB/balen/api/model/user.js] ### 
+ error: error: column "t" does not exist 
+### END LINE ### 
+
+
+### 7/26/2022, 11:22:25 AM7, [/home/kura/SKPRB/balen/api/model/user.js] ### 
+ error: error: operator does not exist: boolean = integer 
+### END LINE ### 
+
+
+### 7/26/2022, 11:23:33 AM7, [/home/kura/SKPRB/balen/api/model/user.js] ### 
+ error: error: column "true" does not exist 
+### END LINE ### 
+
+
+### 7/26/2022, 1:57:26 P7, [/home/kura/SKPRB/balen/api/controller/AuthController.js] ### 
+ error: function next(err) {
+    // signal to exit route
+    if (err && err === 'route') {
+      return done();
+    }
+
+    // signal to exit router
+    if (err && err === 'router') {
+      return done(err)
+    }
+
+    var layer = stack[idx++];
+    if (!layer) {
+      return done(err);
+    }
+
+    // max sync stack
+    if (++sync > 100) {
+      return setImmediate(next, err)
+    }
+
+    if (layer.method && layer.method !== method) {
+      return next(err);
+    }
+
+    if (err) {
+      layer.handle_error(err, req, res, next);
+    } else {
+      layer.handle_request(req, res, next);
+    }
+
+    sync = 0
+  } 
+### END LINE ### 
+
+
+### 7/26/2022, 1:57:45 P7, [/home/kura/SKPRB/balen/api/controller/AuthController.js] ### 
+ error: function next(err) {
+    // signal to exit route
+    if (err && err === 'route') {
+      return done();
+    }
+
+    // signal to exit router
+    if (err && err === 'router') {
+      return done(err)
+    }
+
+    var layer = stack[idx++];
+    if (!layer) {
+      return done(err);
+    }
+
+    // max sync stack
+    if (++sync > 100) {
+      return setImmediate(next, err)
+    }
+
+    if (layer.method && layer.method !== method) {
+      return next(err);
+    }
+
+    if (err) {
+      layer.handle_error(err, req, res, next);
+    } else {
+      layer.handle_request(req, res, next);
+    }
+
+    sync = 0
+  } 
+### END LINE ### 
+
+
+### 7/26/2022, 1:58:04 P7, [/home/kura/SKPRB/balen/api/controller/AuthController.js] ### 
+ error: function next(err) {
+    // signal to exit route
+    if (err && err === 'route') {
+      return done();
+    }
+
+    // signal to exit router
+    if (err && err === 'router') {
+      return done(err)
+    }
+
+    var layer = stack[idx++];
+    if (!layer) {
+      return done(err);
+    }
+
+    // max sync stack
+    if (++sync > 100) {
+      return setImmediate(next, err)
+    }
+
+    if (layer.method && layer.method !== method) {
+      return next(err);
+    }
+
+    if (err) {
+      layer.handle_error(err, req, res, next);
+    } else {
+      layer.handle_request(req, res, next);
+    }
+
+    sync = 0
+  } 
+### END LINE ### 
+
+
+### 7/26/2022, 2:01:53 P7, [/home/kura/SKPRB/balen/api/model/user.js] ### 
+ error: error: column "undefined" does not exist 
+### END LINE ### 
+
+
+### 7/26/2022, 2:02:47 P7, [/home/kura/SKPRB/balen/api/model/user.js] ### 
+ error: error: column "undefined" does not exist 
+### END LINE ### 
+
+
